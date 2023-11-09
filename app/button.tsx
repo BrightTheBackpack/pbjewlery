@@ -33,9 +33,11 @@ export default function Button(props: ButtonProps) {
 			disabled={!!props.disabled || !!props.loading}
 			onClick={() => props.onClick?.()}
 		>
+			 <React.Fragment>
 			{props.icon && props.iconSide !== 'right' && <props.icon />}
 			{props.children}
 			{props.icon && props.iconSide === 'right' && <props.icon />}
+			 <React.Fragment>
 		</button>
 	)
 }
