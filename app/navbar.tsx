@@ -50,7 +50,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 						<a href='/login'>Log In</a>
 					</li>
 					<li>
-						<a href='/editor'><Button>Open Editor</Button></a>
+						
 					</li>
 				</>)}
 			</ul>
