@@ -13,6 +13,47 @@ interface MainNavbarProps {
 export default function MainNavbar(props: MainNavbarProps) {
 	return (
 		<nav className={`${styles.container} ${props.transparent ? styles.transparent : ''}`}>
+				<ul class={styles.navlinks}>
+				<li class={styles.logo}>
+					<a href='/'>
+						<img class={styles.longImg} src={`/spriglogotext-${props.goldLogo ? 'gold' : 'white'}.png`} height={30} width={87} alt='Sprig Logo' />
+					</a>
+				</li>
+				{props.session?.session.full ? (
+					<li>
+						<a href='/~'>Your Games</a>
+					</li>
+				) : null}
+				<li><a href='/gallery'>Gallery</a></li>
+				<li><a href='/get'>Get a Sprig</a></li>
+			</ul>
+			<ul class={styles.rightActions}>
+				{props.session?.session.full ? (<>
+					<li class={styles.actionIcon}>
+						<a href='https://github.com/hackclub/sprig/' target='_blank'>
+						
+						</a>
+					</li>
+					<li>
+						<a href='/~/new'><Button icon={IoAdd}>New Game</Button></a>
+					</li>
+				</>) : (<>
+					<li class={styles.plainLink}>
+						<a href='https://github.com/hackclub/sprig/' target='_blank'>
+							GitHub{' '}
+							<span style={{ verticalAlign: 'middle', lineHeight: 1 }}>
+								
+							</span>
+						</a>
+					</li>
+					<li class={styles.plainLink}>
+						<a href='/login'>Log In</a>
+					</li>
+					<li>
+						<a href='/editor'><Button>Open Editor</Button></a>
+					</li>
+				</>)}
+			</ul>
 			
 		</nav>
 	)
