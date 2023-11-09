@@ -31,7 +31,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 				{props.session?.session.full ? (<>
 					<li class={styles.actionIcon}>
 						<a href='https://github.com/hackclub/sprig/' target='_blank'>
-							<IoLogoGithub />
+
 						</a>
 					</li>
 					<li>
@@ -42,7 +42,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 						<a href='https://github.com/hackclub/sprig/' target='_blank'>
 							GitHub{' '}
 							<span style={{ verticalAlign: 'middle', lineHeight: 1 }}>
-								<IoOpenOutline />
+
 							</span>
 						</a>
 					</li>
