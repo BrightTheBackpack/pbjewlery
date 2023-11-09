@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import MainNavBar from './navbar.tsx'
+import MainNavBar from './navbar'
 export default function Home() {
   return 
        
