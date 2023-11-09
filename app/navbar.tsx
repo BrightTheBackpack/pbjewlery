@@ -1,4 +1,4 @@
-//import { IoAdd, IoLogoGithub, IoOpenOutline } from 'react-icons/io5'
+import { IoAdd, IoLogoGithub, IoOpenOutline } from 'react-icons/io5'
 import Button from './button'
 import styles from './navbar.module.css'
 //import { SessionInfo } from '../lib/game-saving/account'
