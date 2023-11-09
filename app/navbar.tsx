@@ -12,7 +12,7 @@ interface MainNavbarProps {
 
 export default function MainNavbar(props: MainNavbarProps) {
 	return (
-		<nav class={`${styles.container} ${props.transparent ? styles.transparent : ''}`}>
+		<nav className={`${styles.container} ${props.transparent ? styles.transparent : ''}`}>
 			
 		</nav>
 	)
