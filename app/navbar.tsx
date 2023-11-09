@@ -1,7 +1,7 @@
-import { IoAdd, IoLogoGithub, IoOpenOutline } from 'react-icons/io5'
-import Button from './design-system/button'
-import styles from './navbar.module.css'
-import { SessionInfo } from '../lib/game-saving/account'
+//import { IoAdd, IoLogoGithub, IoOpenOutline } from 'react-icons/io5'
+//import Button from './design-system/button'
+//import styles from './navbar.module.css'
+//import { SessionInfo } from '../lib/game-saving/account'
 //import { isDark } from '../lib/state'
 
 interface MainNavbarProps {
@@ -35,7 +35,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 						</a>
 					</li>
 					<li>
-						<a href='/~/new'><Button icon={IoAdd}>New Game</Button></a>
+						
 					</li>
 				</>) : (<>
 					<li class={styles.plainLink}>
