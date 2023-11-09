@@ -5,7 +5,7 @@
 //import { isDark } from '../lib/state'
 
 interface MainNavbarProps {
-	session: SessionInfo | null
+	//session: SessionInfo | null
 	transparent?: boolean
 	goldLogo?: boolean
 }
@@ -19,16 +19,12 @@ export default function MainNavbar(props: MainNavbarProps) {
 						<img class={styles.longImg} src={`/spriglogotext-${props.goldLogo ? 'gold' : 'white'}.png`} height={30} width={87} alt='Sprig Logo' />
 					</a>
 				</li>
-				{props.session?.session.full ? (
-					<li>
-						<a href='/~'>Your Games</a>
-					</li>
-				) : null}
+				
 				<li><a href='/gallery'>Gallery</a></li>
 				<li><a href='/get'>Get a Sprig</a></li>
 			</ul>
 			<ul class={styles.rightActions}>
-				{props.session?.session.full ? (<>
+				{(<>
 					<li class={styles.actionIcon}>
 						<a href='https://github.com/hackclub/sprig/' target='_blank'>
 
