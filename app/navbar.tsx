@@ -24,7 +24,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 				<li><a href='/get'>Get a Sprig</a></li>
 			</ul>
 			<ul class={styles.rightActions}>
-				{props.session?.session.full ? (<>
+				{ (<>
 					<li class={styles.actionIcon}>
 						<a href='https://github.com/hackclub/sprig/' target='_blank'>
 						
