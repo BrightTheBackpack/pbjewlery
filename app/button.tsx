@@ -28,7 +28,7 @@ export default function Button(props: ButtonProps) {
 				${props.loading ? styles.loading : ''}
 				${props.class ?? ''}
 			`}
-			role={props.role ?? 'button'}
+			role={ 'button'}//props.role??'button
 			type={props.type ?? 'button'}
 			disabled={!!props.disabled || !!props.loading}
 			onClick={() => props.onClick?.()}
