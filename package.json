@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "react": "^18",
+    "@astrojs/preact": "^2.0.1",
     "react-dom": "^18",
     "next": "14.0.0"
   },
