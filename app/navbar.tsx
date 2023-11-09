@@ -19,11 +19,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 						<img class={styles.longImg} src={`/spriglogotext-${props.goldLogo ? 'gold' : 'white'}.png`} height={30} width={87} alt='Sprig Logo' />
 					</a>
 				</li>
-				{props.session?.session.full ? (
-					<li>
-						<a href='/~'>Your Games</a>
-					</li>
-				) : null}
+
 				<li><a href='/gallery'>Gallery</a></li>
 				<li><a href='/get'>Get a Sprig</a></li>
 			</ul>
