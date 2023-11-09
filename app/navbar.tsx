@@ -24,7 +24,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 				<li><a href='/get'>Get a Sprig</a></li>
 			</ul>
 			<ul class={styles.rightActions}>
-				{ (<>
+				<>
 					<li class={styles.actionIcon}>
 						<a href='https://github.com/hackclub/sprig/' target='_blank'>
 						
@@ -48,7 +48,7 @@ export default function MainNavbar(props: MainNavbarProps) {
 					<li>
 						<a href='/editor'><Button>Open Editor</Button></a>
 					</li>
-				</>)}
+				</>
 			</ul>
 			
 		</nav>
